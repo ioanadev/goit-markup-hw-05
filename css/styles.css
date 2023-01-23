@@ -119,7 +119,9 @@ a {
   fill: currentColor;
   margin-right: 10px;
 }
-
+.top-line-heder {
+  border-bottom: 1px solid var(--gray-color-social);
+}
 /*Head section*/
 .title-section {
   background-color: var(--gray-color-hero);
@@ -439,15 +441,15 @@ address {
   max-width: 1600px;
 }*/
 
-.current-page-link:active::after {
-  content: "________";
+.current-page-link::after {
+  content: "";
   display: block;
-  width: 100%;
-  height: 2px;
+  width: 58px;
+  height: 4px;
+  color: var(--blue-color);
   background-color: var(--blue-color);
   position: absolute;
-  bottom: 5px;
-  color: var(--blue-color);
+  top: 76px;
 }
 
 .button-meniu {
