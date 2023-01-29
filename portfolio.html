@@ -271,8 +271,14 @@
       <section class="newsletter-section">
         <h4 class="newsletter-subtitle">Subscribe to the newsletter</h4>
         <div class="newsletter-box">
-          <input type="email" name="email" placeholder="E-mail" />
-          <button type="submit">
+          <input
+            type="email"
+            name="email"
+            placeholder="E-mail"
+            autocomplete="off"
+            required
+          />
+          <button type="submit" class="button">
             Subscribe
             <svg width="20" height="20">
               <use href="images/icons.svg#icon-send"></use>
