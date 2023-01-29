@@ -19,6 +19,7 @@
   </head>
 
   <body>
+    <!--is-hidden-->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" data-modal-close class="svg-button-close">
@@ -26,6 +27,61 @@
             <use href="images/icons.svg#icon-close"></use>
           </svg>
         </button>
+        <form class="service-form" autocomplete="off">
+          <fieldset>
+            <legend>Leave your information and we'll call you back</legend>
+            <label>
+              Name
+
+              <input type="text" name="name" />
+              <svg width="12" height="12">
+                <use href="images/icons.svg#icon-person"></use>
+              </svg>
+            </label>
+            <label>
+              Telephone
+
+              <input type="tel" name="phone_number" />
+              <svg width="13" height="13">
+                <use href="images/icons.svg#icon-phone"></use>
+              </svg>
+            </label>
+            <label>
+              E-mail
+
+              <input type="email" name="email" />
+              <svg width="15" height="12">
+                <use href="images/icons.svg#icon-envelope2"></use>
+              </svg>
+            </label>
+            <label>
+              Comments
+              <textarea
+                name="comments"
+                id="comments"
+                cols="30"
+                rows="10"
+                placeholder=" Enter the text"
+              ></textarea>
+            </label>
+            <div class="checkbox-label">
+              <label>
+                <input type="checkbox" name="terms" />
+                <span class="checkbox-replace">
+                  <svg width="15" height="12" class="check-svg">
+                    <use href="images/icons.svg#icon-check"></use>
+                  </svg>
+                </span>
+                I agree with the letter and accept the
+                <a href="#">Terms and Conditions</a>
+              </label>
+            </div>
+
+            <div class="service-request-sent">
+              <button type="submit" class="sent-button">Send</button>
+            </div>
+          </fieldset>
+        </form>
       </div>
     </div>
     <!--Top line Section-->
@@ -139,25 +195,34 @@
           <h2 class="subtitle-text">What we do</h2>
           <ul class="gallery">
             <li>
-              <img
-                src="images/box1.1.jpg"
-                alt="Hands on the keyboard on the desk and a tablet with programming code"
-                width="370"
-              />
+              <div class="overlay-gallery">
+                <img
+                  src="images/box1.1.jpg"
+                  alt="Hands on the keyboard on the desk and a tablet with programming code"
+                  width="370"
+                />
+                <div class="overlay-gallery-image">DESKTOP APPS</div>
+              </div>
             </li>
             <li>
-              <img
-                src="images/box1.2.jpg"
-                alt="The lady holding a phone in her left hand and the laptop keyboard with her right hand"
-                width="370"
-              />
+              <div class="overlay-gallery">
+                <img
+                  src="images/box1.2.jpg"
+                  alt="The lady holding a phone in her left hand and the laptop keyboard with her right hand"
+                  width="370"
+                />
+                <div class="overlay-gallery-image">MOBILE APPS</div>
+              </div>
             </li>
             <li>
-              <img
-                src="images/box1.3.jpg"
-                alt="Two hands holding a tablet on which the color palette is presented"
-                width="370"
-              />
+              <div class="overlay-gallery">
+                <img
+                  src="images/box1.3.jpg"
+                  alt="Two hands holding a tablet on which the color palette is presented"
+                  width="370"
+                />
+                <div class="overlay-gallery-image">DESIGN SOLUTIONS</div>
+              </div>
             </li>
           </ul>
         </div>
@@ -418,6 +483,18 @@
             </a>
           </li>
         </ul>
+      </section>
+      <section class="newsletter-section">
+        <h4 class="newsletter-subtitle">Subscribe to the newsletter</h4>
+        <div class="newsletter-box">
+          <input type="email" name="email" placeholder="E-mail" />
+          <button type="submit">
+            Subscribe
+            <svg width="20" height="20">
+              <use href="images/icons.svg#icon-send"></use>
+            </svg>
+          </button>
+        </div>
       </section>
     </footer>
     <script src="js/modal.js"></script>
