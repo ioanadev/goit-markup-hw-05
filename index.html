@@ -32,24 +32,21 @@
             <legend>Leave your information and we'll call you back</legend>
             <label>
               Name
-
-              <input type="text" name="name" />
+              <input type="text" name="name" required />
               <svg width="12" height="12">
                 <use href="images/icons.svg#icon-person"></use>
               </svg>
             </label>
             <label>
               Telephone
-
-              <input type="tel" name="phone_number" />
+              <input type="tel" name="phone_number" required />
               <svg width="13" height="13">
                 <use href="images/icons.svg#icon-phone"></use>
               </svg>
             </label>
             <label>
               E-mail
-
-              <input type="email" name="email" />
+              <input type="email" name="email" required />
               <svg width="15" height="12">
                 <use href="images/icons.svg#icon-envelope2"></use>
               </svg>
@@ -62,11 +59,12 @@
                 cols="30"
                 rows="10"
                 placeholder=" Enter the text"
+                required
               ></textarea>
             </label>
             <div class="checkbox-label">
               <label>
-                <input type="checkbox" name="terms" />
+                <input type="checkbox" name="terms" required />
                 <span class="checkbox-replace">
                   <svg width="15" height="12" class="check-svg">
                     <use href="images/icons.svg#icon-check"></use>
@@ -487,8 +485,14 @@
       <section class="newsletter-section">
         <h4 class="newsletter-subtitle">Subscribe to the newsletter</h4>
         <div class="newsletter-box">
-          <input type="email" name="email" placeholder="E-mail" />
-          <button type="submit">
+          <input
+            type="email"
+            name="email"
+            placeholder="E-mail"
+            autocomplete="off"
+            required
+          />
+          <button type="submit" class="button">
             Subscribe
             <svg width="20" height="20">
               <use href="images/icons.svg#icon-send"></use>
